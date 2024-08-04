@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portal to get daily weather notifications on your mobile phone.">
+    <meta name="keywords" content="weather, notifications, mobile, weather updates">
+    <title>Weather Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="rainbow-text">
+            <h1>Weather Information</h1>
+        </div>
+        <form id="weatherForm">
+            <input type="text" id="locationInput" placeholder="Enter your location" required>
+            <input type="tel" id="phoneNumberInput" placeholder="Enter your mobile number" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="loadingSpinner" class="spinner" style="display:none;"></div>
+    </div>
+
+    <div class="message-box">
+        <p>“Empowering farmers with timely weather insights for a better harvest.”</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
