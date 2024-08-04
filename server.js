@@ -6,8 +6,8 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-const accountSid = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
-const authToken = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; 
+const accountSid = //Include Twilio AccountSid 
+const authToken = //Include Twilio Account authToken 
 
 const client = new twilio(accountSid, authToken);
 
@@ -23,7 +23,7 @@ app.post('/send-sms', (req, res) => {
         .create({
             body: message,
             to: phoneNumber,
-            from: 'XXXXXXXXXXX', 
+            from: //Mention the Mobile Number registered with Twilio Account 
         })
         .then((message) => {
             console.log('Twilio Message SID:', message.sid); 
