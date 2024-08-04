@@ -15,7 +15,7 @@ document.getElementById('weatherForm').addEventListener('submit', async function
 });
 
 async function fetchWeather(location, phoneNumber) {
-    var apiKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+    var apiKey = //Include your OpenWeatherMap API key here
     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
     try {
